@@ -6,8 +6,22 @@ from util import *
 st.set_page_config(page_title="Stockly")
 initialize_state(st)
 
+import random
 
-SAMPLE_PROMPTS = []
+
+
+SAMPLE_PROMPTS = ["Can you show me the price and volume of GM over time?", 
+                  "Can you show me the volume of GM over the last 6 months?", 
+                  "What is the recent news sentiment on GM?", 
+                  "Tell me about the biggest risks for GM's profitability.", 
+                  "Plot the growth in net income of GM",
+                  "Who is the CEO of GM?", 
+                  "Which risks are mentioned in the latest annual report of GM", 
+                  "Compare revenue of GM to APPLE",
+                  "Can you list 10 companies similar to GM based on europe?",
+                  ]
+
+RAND_PRO = random.sample(SAMPLE_PROMPTS, 3)
 
 my_ticker = st.session_state['current_ticker']
 all_tickers  = st.session_state['tickers']
@@ -41,6 +55,28 @@ if my_ticker == '':
 
 else:
     st.markdown(f"<h1 style='text-align: center;'> {my_ticker} </h1>", unsafe_allow_html=True)
+    st.markdown(f"<h4 style='text-align: left;'> Suggestions: </h4>", unsafe_allow_html=True)
+    butt_user_input = ''
+
+    if 'ps' in st.session_state:
+        rand_ps = st.session_state['ps']
+    else:
+        rand_ps = RAND_PRO
+        st.session_state['ps'] = rand_ps
+
+    if st.button(f"{rand_ps[0]}"):
+        butt_user_input = rand_ps[0]
+        del st.session_state['ps']
+
+    if st.button(f"{rand_ps[1]}"):
+        butt_user_input = rand_ps[1]
+        del st.session_state['ps']
+
+    if st.button(f"{rand_ps[2]}"):
+        butt_user_input = rand_ps[2]
+        del st.session_state['ps']
+
+    print(butt_user_input)
     initialize_ticker(st, my_ticker)
 
     # container for chat history
@@ -53,7 +89,8 @@ else:
             user_input = st.text_area("You:", key='input', height=100)
             submit_button = st.form_submit_button(label='Send')
 
-        if submit_button and user_input:
+        if (submit_button and user_input) or butt_user_input != '':
+            user_input = user_input if user_input else butt_user_input
             output = generate_response(user_input, my_ticker, st)
             st.session_state['ticker_states'][my_ticker]['past'].append(user_input)
             if type(output) is str:
