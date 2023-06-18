@@ -23,3 +23,14 @@ MVP for a Retail Investment Advisor Powered by LLMs
 - streamlit (user interface)
 - pandas/numpy/plotly/seaborn (data visualization)
 - (TBD) scikit-learn/pytorch (needed in the future to suport dynamic quant models)
+
+# Product screenshots
+
+## Custom Price/Volume Chart
+<p align="center"><img src="sc_1.png" alt= "" width="800"></p>
+
+## News Sentiment
+<p align="center"><img src="sc_2.png" alt= "" width="800"></p>
+
+## Peer Finder
+<p align="center"><img src="sc_3.png" alt= "" width="800"></p>
