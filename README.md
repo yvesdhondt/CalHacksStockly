@@ -40,3 +40,6 @@ MVP for a Retail Investment Advisor Powered by LLMs
 
 ## Risk Analysis on SEC Filings
 <p align="center"><img src="sc_4.png" alt= "" width="800"></p>
+
+## Revenue/Income Insights from SEC Filings
+<p align="center"><img src="sc_5.png" alt= "" width="800"></p>
