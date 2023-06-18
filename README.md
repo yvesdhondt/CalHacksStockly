@@ -37,3 +37,6 @@ MVP for a Retail Investment Advisor Powered by LLMs
 
 ## Peer Finder
 <p align="center"><img src="sc_3.png" alt= "" width="800"></p>
+
+## Risk Analysis on SEC Filings
+<p align="center"><img src="sc_4.png" alt= "" width="800"></p>
