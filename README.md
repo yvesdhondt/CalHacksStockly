@@ -26,6 +26,9 @@ MVP for a Retail Investment Advisor Powered by LLMs
 
 # Product screenshots
 
+## Landing Page
+<p align="center"><img src="sc_0.png" alt= "" width="800"></p>
+
 ## Custom Price/Volume Chart
 <p align="center"><img src="sc_1.png" alt= "" width="800"></p>
 
