@@ -1,8 +1,15 @@
 # Cal Hacks 2023 - Stockly
 
-<p align="center"><img src="logo.png" alt= "" width="150" height="150"></p>
+<p align="center"><img src="product_img/logo.png" alt= "" width="150" height="150"></p>
 
 MVP for a Retail Investment Advisor Powered by LLMs
+
+# Index
+
+1. Key Problems Tackled
+2. Key Tools Used
+3. Pitch Deck
+4. MVP Screenshots
 
 # Key Problems Tackled
 
@@ -24,22 +31,30 @@ MVP for a Retail Investment Advisor Powered by LLMs
 - pandas/numpy/plotly/seaborn (data visualization)
 - (TBD) scikit-learn/pytorch (needed in the future to suport dynamic quant models)
 
+# Pitch deck
+
+<p align="center"><img src="pitch/Slide1.JPG" alt= "" width="800"></p>
+<p align="center"><img src="pitch/Slide2.JPG" alt= "" width="800"></p>
+<p align="center"><img src="pitch/Slide3.JPG" alt= "" width="800"></p>
+<p align="center"><img src="pitch/Slide4.JPG" alt= "" width="800"></p>
+<p align="center"><img src="pitch/Slide5.JPG" alt= "" width="800"></p>
+
 # Product screenshots
 
 ## Landing Page
-<p align="center"><img src="sc_0.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_0.png" alt= "" width="800"></p>
 
 ## Custom Price/Volume Chart
-<p align="center"><img src="sc_1.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_1.png" alt= "" width="800"></p>
 
 ## News Sentiment
-<p align="center"><img src="sc_2.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_2.png" alt= "" width="800"></p>
 
 ## Peer Finder
-<p align="center"><img src="sc_3.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_3.png" alt= "" width="800"></p>
 
 ## Risk Analysis on SEC Filings
-<p align="center"><img src="sc_4.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_4.png" alt= "" width="800"></p>
 
 ## Revenue/Income Insights from SEC Filings
-<p align="center"><img src="sc_5.png" alt= "" width="800"></p>
+<p align="center"><img src="product_img/sc_5.png" alt= "" width="800"></p>
