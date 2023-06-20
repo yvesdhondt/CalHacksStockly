@@ -18,7 +18,9 @@ SAMPLE_PROMPTS = ["Can you show me the price and volume of GM over time?",
                   "Who is the CEO of GM?", 
                   "Which risks are mentioned in the latest annual report of GM", 
                   "Compare revenue of GM to APPLE",
-                  "Can you list 10 companies similar to GM based on europe?",
+                #   "Can you name 10 companies similar to GM in europe?",
+                  "How do automotive companies compare? Please check correlations",
+                  "Can you please analyze aerospace companies and their hierarchy for me?",
                   ]
 
 RAND_PRO = random.sample(SAMPLE_PROMPTS, 3)
@@ -97,6 +99,8 @@ else:
                 st.session_state['ticker_states'][my_ticker]['generated'].append(output)
             else:
                 st.session_state['ticker_states'][my_ticker]['generated'].extend(output)
+            
+            st.experimental_rerun()
 
         if st.session_state['ticker_states'][my_ticker]['generated']:
             with response_container:

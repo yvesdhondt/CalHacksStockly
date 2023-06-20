@@ -68,6 +68,7 @@ def generate_response(prompt, ticker, st):
             "financial_reports_answerer": financial_reports_answerer,
             "create_revenue_comparator": create_revenue_comparator,
             "create_growthchart": create_growthchart,
+            "universe_correlator":universe_correlator,
         }
         function_name = response_message["function_call"]["name"]
         function_to_call = available_functions[function_name]
@@ -91,11 +92,19 @@ def generate_response(prompt, ticker, st):
                 prompt=function_args.get("prompt")
             )
 
-        if function_name in ("create_revenue_comparator"):
+        elif function_name in ("create_revenue_comparator"):
             function_response, fig = function_to_call(
                 ticker1=function_args.get("ticker1"),
                 ticker2=function_args.get("ticker2"),
             )
+        
+        elif function_name in ("universe_correlator"):
+            #print(function_args) #for debugging
+            function_response, fig = function_to_call(
+                    tickers=json.loads(function_args.get("tickers")),
+                    sector=function_args.get("sector"),
+                    hierarchical=function_args.get("hierarchical")                
+                )
 
         # Step 4: send the info on the function call and function response to GPT
         st.session_state['ticker_states'][ticker]['messages'].append(response_message)
