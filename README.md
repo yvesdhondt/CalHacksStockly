@@ -8,8 +8,9 @@ MVP for a Retail Investment Advisor Powered by LLMs
 
 1. Key Problems Tackled
 2. Key Tools Used
-3. Pitch Deck
-4. MVP Screenshots
+3. Product Demo
+4. Pitch Deck
+5. MVP Screenshots
 
 # Key Problems Tackled
 
@@ -30,6 +31,10 @@ MVP for a Retail Investment Advisor Powered by LLMs
 - streamlit (user interface)
 - pandas/numpy/plotly/seaborn (data visualization)
 - (TBD) scikit-learn/pytorch (needed in the future to suport dynamic quant models)
+
+# Product Demo
+
+https://github.com/yvesdhondt/CalHacksStockly/assets/36788808/cb48fc7f-bfcb-4521-93b0-5dd5101ceb6a
 
 # Pitch deck
 
