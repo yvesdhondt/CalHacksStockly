@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 credentials.json
 
-.pptx
+*.pptx
