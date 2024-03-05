@@ -4,6 +4,8 @@
 
 MVP for a Retail Investment Advisor Powered by LLMs
 
+**Contributers**: Yves D'hondt, George Sotiropoulos, Rishi Kumra, Naman Singhal
+
 # Index
 
 1. Key Problems Tackled
